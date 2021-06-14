@@ -12,7 +12,6 @@ struct RoomList: View {
     @ObservedObject var store: RoomStore
     
     var body: some View {
-        
         NavigationView {
             List {
                 Section {
