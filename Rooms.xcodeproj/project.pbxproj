@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9A2867352674C9C70009EA16 /* RoomsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2867342674C9C70009EA16 /* RoomsApp.swift */; };
-		9A2867372674C9C70009EA16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2867362674C9C70009EA16 /* ContentView.swift */; };
+		9A2867372674C9C70009EA16 /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2867362674C9C70009EA16 /* RoomList.swift */; };
 		9A2867392674C9C80009EA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2867382674C9C80009EA16 /* Assets.xcassets */; };
 		9A28673C2674C9C80009EA16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A28673B2674C9C80009EA16 /* Preview Assets.xcassets */; };
+		9A81CF3F2674FB9A00601570 /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A81CF3D2674FB9A00601570 /* Rooms.xcassets */; };
+		9A81CF402674FB9A00601570 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81CF3E2674FB9A00601570 /* Room.swift */; };
+		9AC138E12675BA830062ADE6 /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC138E02675BA830062ADE6 /* RoomDetail.swift */; };
+		9AC138FD2675E4C10062ADE6 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC138FC2675E4C10062ADE6 /* Device.swift */; };
+		9AC13900267611650062ADE6 /* RoomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC138FF267611650062ADE6 /* RoomStore.swift */; };
+		9AC1390526766FCD0062ADE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AC1390726766FCD0062ADE6 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A2867312674C9C70009EA16 /* Rooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2867342674C9C70009EA16 /* RoomsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsApp.swift; sourceTree = "<group>"; };
-		9A2867362674C9C70009EA16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A2867362674C9C70009EA16 /* RoomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
 		9A2867382674C9C80009EA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A28673B2674C9C80009EA16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A28673D2674C9C80009EA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A81CF3D2674FB9A00601570 /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
+		9A81CF3E2674FB9A00601570 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		9AC138E02675BA830062ADE6 /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
+		9AC138FC2675E4C10062ADE6 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		9AC138FF267611650062ADE6 /* RoomStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStore.swift; sourceTree = "<group>"; };
+		9AC13902267657840062ADE6 /* Rooms.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rooms.entitlements; sourceTree = "<group>"; };
+		9AC1390626766FCD0062ADE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9AC139082676700B0062ADE6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,15 @@
 		9A2867332674C9C70009EA16 /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				9AC13902267657840062ADE6 /* Rooms.entitlements */,
 				9A2867342674C9C70009EA16 /* RoomsApp.swift */,
-				9A2867362674C9C70009EA16 /* ContentView.swift */,
+				9A2867362674C9C70009EA16 /* RoomList.swift */,
+				9AC138E02675BA830062ADE6 /* RoomDetail.swift */,
+				9A81CF3E2674FB9A00601570 /* Room.swift */,
+				9AC138FF267611650062ADE6 /* RoomStore.swift */,
+				9AC1390B2676EA810062ADE6 /* Utils */,
+				9AC1390726766FCD0062ADE6 /* Localizable.strings */,
+				9A81CF3D2674FB9A00601570 /* Rooms.xcassets */,
 				9A2867382674C9C80009EA16 /* Assets.xcassets */,
 				9A28673D2674C9C80009EA16 /* Info.plist */,
 				9A28673A2674C9C80009EA16 /* Preview Content */,
@@ -67,6 +88,14 @@
 				9A28673B2674C9C80009EA16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AC1390B2676EA810062ADE6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9AC138FC2675E4C10062ADE6 /* Device.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +124,7 @@
 		9A2867292674C9C70009EA16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					9A2867302674C9C70009EA16 = {
@@ -110,6 +139,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9A2867282674C9C70009EA16;
 			productRefGroup = 9A2867322674C9C70009EA16 /* Products */;
@@ -127,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A28673C2674C9C80009EA16 /* Preview Assets.xcassets in Resources */,
+				9AC1390526766FCD0062ADE6 /* Localizable.strings in Resources */,
+				9A81CF3F2674FB9A00601570 /* Rooms.xcassets in Resources */,
 				9A2867392674C9C80009EA16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,18 +170,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2867372674C9C70009EA16 /* ContentView.swift in Sources */,
+				9A2867372674C9C70009EA16 /* RoomList.swift in Sources */,
 				9A2867352674C9C70009EA16 /* RoomsApp.swift in Sources */,
+				9AC138FD2675E4C10062ADE6 /* Device.swift in Sources */,
+				9A81CF402674FB9A00601570 /* Room.swift in Sources */,
+				9AC13900267611650062ADE6 /* RoomStore.swift in Sources */,
+				9AC138E12675BA830062ADE6 /* RoomDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AC1390726766FCD0062ADE6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC1390626766FCD0062ADE6 /* en */,
+				9AC139082676700B0062ADE6 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9A28673E2674C9C80009EA16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -211,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -267,20 +317,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rooms/Rooms.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Rooms/Preview Content\"";
 				DEVELOPMENT_TEAM = Q9N25B75ZN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Rooms/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xin.leiguang.Rooms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -289,20 +342,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rooms/Rooms.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Rooms/Preview Content\"";
 				DEVELOPMENT_TEAM = Q9N25B75ZN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Rooms/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xin.leiguang.Rooms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};

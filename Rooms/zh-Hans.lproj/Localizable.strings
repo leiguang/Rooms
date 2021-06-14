@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Rooms
+
+  Created by Guang Lei on 2021/6/14.
+  
+*/
+
+"Rooms" = "会议室";
+"Add Room" = "添加会议室";
+"%lld people" = "%lld 人";
